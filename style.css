@@ -48,3 +48,9 @@ hr {
 .blue {
     color: rgb(18, 81, 207);
 }
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 35px;
+    }
+}
