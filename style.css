@@ -22,6 +22,7 @@ h1 {
     margin-bottom: 60px;
     text-align: center;
     color: rgb(0, 85, 146);
+    text-indent: 0;
 }
 
 ul {
@@ -47,6 +48,10 @@ hr {
 
 .blue {
     color: rgb(18, 81, 207);
+}
+
+sup {
+    font-size: 13px;
 }
 
 @media (max-width: 400px) {
