@@ -1,4 +1,4 @@
-body {
+main {
     direction: rtl;
     width: 90%;
     text-align: right;
@@ -34,6 +34,13 @@ b {
     color: #AA0A00;
 }
 
+footer {
+    background-color: #323232;
+    color: #ffffff;
+    text-indent: 0;
+    text-align: center;
+}
+
 .inline {
     display: inline;
 }
@@ -54,8 +61,86 @@ sup {
     font-size: 13px;
 }
 
+.next-prev {
+    position: relative;
+    height: 50px;
+}
+
+.next,
+.prev {
+    background-color: #ddd;
+    padding: 0 10px;
+    width: 82px;
+    color: #000;
+    position: absolute;
+    transition: .5s;
+    box-shadow: #a9a8a8 3px 2px inset;
+}
+
+.next:hover,
+.prev:hover {
+    background-color: #2d2c2c;
+    padding: 0 10px;
+    color: #fff;
+    border-radius: 10px 0;
+    transition: .5s;
+    box-shadow: #a9a8a8 3px 2px;
+}
+
+.prev:hover {
+    border-radius: 0 10px;
+}
+
+.next {
+    border-radius: 0 10px;
+    right: 0;
+    text-align: right;
+}
+
+.prev {
+    border-radius: 10px 0;
+    left: 0;
+    text-align: left;
+}
+
+.top {
+    background-color: #323232;
+    width: 10px;
+    height: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    padding: 0px 10px;
+    position: sticky;
+    top: 83%;
+    content: "\f077";
+    z-index: 5;
+    transition: .375s;
+    outline: #323232 1px solid;
+}
+
+strong {
+    position: relative;
+    top: 4px;
+    left: 1.5px;
+    font-size: larger;
+}
+
+.top:hover {
+    background-color: #fff;
+    color: #323232;
+    outline: 1px red solid;
+    box-shadow: #a9a8a8 3px 2px inset;
+}
+
 @media (max-width: 400px) {
     h1 {
         font-size: 35px;
+    }
+
+    .next,
+    .prev {
+        font-size: smaller;
+        width: 74px;
     }
 }
