@@ -121,9 +121,9 @@ sup {
 
 strong {
     position: relative;
-    top: 4px;
-    left: 1.5px;
-    font-size: larger;
+    top: 1px;
+    left: 10%;
+    font-size: x-large;
 }
 
 .top:hover {
@@ -136,6 +136,22 @@ strong {
 @media (max-width: 400px) {
     h1 {
         font-size: 35px;
+    }
+
+    main {
+        font-size: 14.0pt;
+    }
+
+    .top {
+        width: 5px;
+        height: 25px;
+    }
+
+    strong{
+        position: absolute;
+        font-size: larger;
+        left: 36%;
+        top: 5%;
     }
 
     .next,
