@@ -147,7 +147,7 @@ strong {
         height: 25px;
     }
 
-    strong{
+    strong {
         position: absolute;
         font-size: larger;
         left: 36%;
@@ -159,4 +159,11 @@ strong {
         font-size: smaller;
         width: 74px;
     }
+}
+
+.a {
+    display: none;
+    padding: 10px;
+    direction: ltr;
+    text-align: left;
 }
